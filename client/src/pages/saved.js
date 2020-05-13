@@ -60,12 +60,12 @@ class Saved extends Component {
                                            this.handleDelete(result._id)
                                             
                                             }}  className="btn btn-secondary delete">Delete</button>
-                                        <a href={result.link} className="btn btn-secondary view" className="btn btn-secondary view">View</a>
+                                        <a href={result.link} className="btn btn-secondary view" >View</a>
                                     </div>
                                 </div>
 
                                 <div className="row">
-                                    <div className="col-sm-3"><img src={result.image}/></div>
+                                    <div className="col-sm-3"><img src={result.image} alt="book"/></div>
                                     <div className="col-sm-9">{result.description}</div>
                                 </div>
                             </div>
