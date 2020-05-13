@@ -1,0 +1,59 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #FAEBD7;
+}
+
+.jumbotron {
+    text-align: center;
+    height: 100%;
+    background-image: url("/images/books.png");
+    margin-top: 10px;
+    margin-bottom: 9%;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #976a59;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.nav-link {
+    font-size: 1.2em;
+}
+
+.form {
+    border: solid 1px black;
+    padding: 15px 15px 55px 15px;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+.search {
+    float: right;
+    margin: 10px;
+}
+
+.results {
+    border: solid 1px black;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.view, .delete {
+    float: right;
+    margin-right: 20px;
+}
+
+.save {
+    float: right;
+}
+
+.row1 {
+    margin-top: 20px;
+}
