@@ -95,7 +95,7 @@ class Search extends Component {
                                 </div>
 
                                 <div className="row">
-                                    <div className="col-sm-3"><img src={result.volumeInfo.imageLinks != undefined ? result.volumeInfo.imageLinks.thumbnail : "/noimage.png"} style={{ width: "100%" }} /></div>
+                                    <div className="col-sm-3"><img src={result.volumeInfo.imageLinks !== undefined ? result.volumeInfo.imageLinks.thumbnail : "/noimage.png"} style={{ width: "100%" }} alt="book"/></div>
                                     <div className="col-sm-9"><span id="description">{result.volumeInfo.description}</span></div>
                                 </div>
 
