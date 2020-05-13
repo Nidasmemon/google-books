@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import Api from "../utils/api";
 import api from "../utils/api";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 import Form from "../components/Form";
-import Row from "../components/Row";
-import { Link } from "react-router-dom";
 
 
 
