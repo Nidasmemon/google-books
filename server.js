@@ -21,10 +21,11 @@ if (process.env.NODE_ENV === "production") {
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-    let url = path.join(__dirname, '../client/build', 'index.html');
-    if (!url.startsWith('/')) // since we're on local windows
-        url = url.substring(1);
-    res.sendFile(url);
+    res.sendFile(path.join(__dirname, '../client/build/index.html'))
+    // let url = path.join(__dirname, '../client/build/index.html');
+    // if (!url.startsWith('/')) // since we're on local windows
+    //     url = url.substring(1);
+    // res.sendFile(url);
 });
 
 app.listen(PORT, function () {
