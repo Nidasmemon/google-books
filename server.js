@@ -1,14 +1,16 @@
 var express = require("express");
 var app = express();
 var PORT = process.env.PORT || 3001;
+var path = require("path");
 var mongoose = require("mongoose");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+var mongodb_URI = process.env.MONGODB_URI || "mongodb://localhost/googleBooksDB";
 var apiRoutes = require("./routes/apiRoutes");
 apiRoutes(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googleBooksDB");
+mongoose.connect(mongodb_URI, {useNewUrlParser: true});
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
